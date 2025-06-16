@@ -17,10 +17,42 @@
     ],
     "require": {
         "php": "^8.4",
+        "appstract/laravel-stock": "^1.2",
+        "awcodes/filament-tiptap-editor": "^3.0",
+        "awcodes/shout": "^2.0",
+        "barryvdh/laravel-dompdf": "^3.1",
+        "bezhansalleh/filament-shield": "^3.3",
+        "codewithdennis/filament-select-tree": "^3.1",
+        "coolsam/nested-comments": "^1.0",
+        "filament/filament": "^3.3",
+        "filament/spatie-laravel-tags-plugin": "^3.2",
+        "filament/spatie-laravel-translatable-plugin": "^3.2",
+        "guava/filament-modal-relation-managers": "^1.4",
+        "illuminate/contracts": "^10.0||^11.0||^12.0",
+        "lorisleiva/laravel-actions": "^2.9",
+        "maatwebsite/excel": "^3.1",
+        "mcamara/laravel-localization": "^2.2",
+        "mvenghaus/filament-plugin-translatable-inline": "^3.0",
+        "noxoua/filament-activity-log": "^2.2",
+        "outerweb/filament-settings": "^1.2",
+        "outerweb/filament-translatable-fields": "^2.0",
+        "overtrue/laravel-pinyin": "^5.1",
+        "ralphjsmit/laravel-filament-activitylog": "^1.8",
+        "ralphjsmit/laravel-filament-media-library": "^3.8",
+        "ralphjsmit/laravel-seo": "^1.6",
+        "solution-forest/filament-tree": "^2.1",
+        "spatie/eloquent-sortable": "^4.4",
+        "spatie/laravel-activitylog": "^4.10",
+        "spatie/laravel-model-status": "^1.18",
         "spatie/laravel-package-tools": "^1.16",
-        "illuminate/contracts": "^10.0||^11.0||^12.0"
+        "stechstudio/filament-impersonate": "^3.15",
+        "tapp/filament-value-range-filter": "^1.0",
+        "torann/currency": "^1.1",
+        "torann/geoip": "^3.0",
+        "webpatser/laravel-countries": "^1.5"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.15",
         "laravel/pint": "^1.14",
         "nunomaduro/collision": "^8.1.1||^7.10.0",
         "orchestra/testbench": "^10.0.0||^9.0.0||^8.22.0",
@@ -29,6 +61,9 @@
         "pestphp/pest-plugin-laravel": "^3.0"
     },
     "autoload": {
+        "files": [
+            "src/Utils/helpers.php"
+        ],
         "psr-4": {
             "Sharenjoy\\NoahCore\\": "src/",
             "Sharenjoy\\NoahCore\\Database\\Factories\\": "database/factories/"
@@ -52,7 +87,8 @@
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
-            "phpstan/extension-installer": true
+            "phpstan/extension-installer": true,
+            "ralphjsmit/packages": true
         }
     },
     "extra": {
@@ -66,5 +102,11 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://satis.ralphjsmit.com"
+        }
+    ]
 }
